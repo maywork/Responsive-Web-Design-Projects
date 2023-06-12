@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+
+.marker {
+  height: 25px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+}
+
+.orange {
+  background-color: rgb(255, 127, 0);
+}
+
+.yellow {
+  background-color: rgb(255, 255, 0);
+}
+
+.chartreuse-green {
+  background-color: rgb(127, 255, 0);
+}
+
+.green {
+  background-color: rgb(0, 255, 0);
+}
+
+.spring-green {
+  background-color: rgb(0, 255, 127);
+}
+
+.cyan {
+  background-color: rgb(0, 255, 255);
+}
+
+.azure {
+  background-color: rgb(0, 127, 255);
+}
+
+.blue {
+  background-color: rgb(0, 0, 255);
+}
+
+.violet {
+  background-color: rgb(127, 0, 255);
+}
+
+.magenta {
+  background-color: rgb(255, 0, 255);
+}
+
+.rose {
+  background-color: rgb(255, 0, 127);
+}
