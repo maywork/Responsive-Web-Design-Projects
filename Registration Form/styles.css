@@ -13,9 +13,6 @@ h1, p {
   text-align: center;
 }
 
-fieldset:last-of-type {
-  border-bottom: none;
-}
 
 form {
   margin: 0 auto;

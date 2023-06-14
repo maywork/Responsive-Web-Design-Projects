@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Survey Form</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,27 +18,45 @@
       <fieldset>
         <div class="form-group">
           <label for="name" id="name-label">Name </label>
-            <input 
+          <input 
             type="text" 
             name="name" 
             id="name" 
             class="form-control"
             placeholder="Enter your name" 
-            required>
+            required
+          >
           
         </div>
         <div class="form-group">
-          <label for="email" id="email-label">Email <input type="email" name="email" id="email" placeholder="Enter your email" required></label>
+          <label for="email" id="email-label">Email </label>
+          <input 
+            type="email" 
+            name="email" 
+            id="email"
+            class="form-control"
+            placeholder="Enter your email" 
+            required
+          >
         </div>
         <div class="form-group">
-          <label for="number" id="number-label">Age (optional)<input type="number" name="number" id="number" placeholder="Age" min="13" max="120"></label>
+          <label for="number" id="number-label">Age (optional) </label>
+          <input 
+          type="number" 
+          name="number" 
+          id="number" 
+          class="form-control"
+          placeholder="Age" 
+          min="13" 
+          max="120">
         </div>
       </fieldset>
       
       <fieldset>
-        <div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
           <label for="">
-            <select name="dropdown" id="dropdown">
+            <select name="role" id="dropdown" class="form-control" required>
               <option disabled value="" selected>Select current role</option>
               <option value="1">Student</option>
               <option value="2">Full Time Job</option>
@@ -48,18 +66,33 @@
             </select>
           </label>
         </div>
-        <div>
+        <div class="form-group">
           <p>Would you recommend freeCodeCamp to a friend?</p>
           <label for="">
-            <input type="radio" name="user-recommend" value="definitely"> 
+            <input 
+            type="radio" 
+            class="input-radio"
+            name="user-recommend" 
+            value="definitely"
+            checked
+            > 
             Definitely
           </label>
           <label for="">
-            <input type="radio" name="user-recommend" value="maybe"> 
+            <input 
+            type="radio"
+            class="input-radio"
+            name="user-recommend" 
+            value="maybe"> 
             Maybe
           </label>
           <label for="">
-            <input type="radio" name="user-recommend" value="not-sure"> 
+            <input 
+            type="radio" 
+            class="input-radio"
+            name="user-recommend" 
+            value="not-sure"
+            >
             Not sure
           </label>
         </div>
@@ -68,24 +101,38 @@
             What would you like to see improved?
           </p>
           <label for="">
-            <input type="checkbox" name="prefer" value="front-end-projects" >
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              name="prefer" 
+              value="front-end-projects" >
             Front-end Projects
           </label>
           <label for="">
-            <input type="checkbox" name="prefer" value="back-end-projects" >
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              name="prefer" 
+              value="back-end-projects" >
             Back-end Projects
           </label>
           <label for="">
-            <input type="checkbox" name="prefer" value="data-visualization" >
+            <input 
+              type="checkbox" 
+              class="input-checkbox"
+              name="prefer" 
+              value="data-visualization" 
+            >
             Data Visualization
           </label>
           <label>
             <input
-                name="prefer"
-                value="challenges"
-                type="checkbox"
-                class="input-checkbox"
-              />Challenges
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            >
+            Challenges
           </label>
           <label
               ><input
@@ -95,13 +142,15 @@
                 class="input-checkbox"
               />Open Source Community</label
             >
-            <label
-              ><input
+            <label>
+              <input
                 name="prefer"
                 value="gitter-help-rooms"
                 type="checkbox"
                 class="input-checkbox"
-              />Gitter help rooms</label
+              />
+              Gitter help rooms
+            </label
             >
             <label
               ><input
