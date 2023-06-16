@@ -1,0 +1,13 @@
+/* * {
+  margin: 0 auto;
+} */
+
+body {
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+}
+
+#logo {
+  width: max(100px, 18vw);
+}
