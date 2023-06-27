@@ -29,7 +29,6 @@ h1 {
 h1 .flex {
   display: flex;
   flex-direction: column-reverse;
-  direction: column-reverse;
   gap: 1rem;
 }
 
@@ -51,12 +50,12 @@ section {
   display: flex;
   justify-content: flex-end;
   position: sticky;
+  z-index: 999;
   top: 0;
   background: #0a0a23;
   color: #fff;
-  margin: 0 -2px;
   padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
-  z-index: 999;
+  margin: 0 -2px;
 }
 
 #years span[class] {
@@ -65,7 +64,7 @@ section {
   text-align: right;
 }
 
-table-wrap {
+.table-wrap {
   padding: 0 0.75rem 1.5rem 0.75rem;
 }
 
@@ -90,3 +89,57 @@ table caption {
   left: 0.5rem;
 }
 
+tbody td {
+  width: 100vw;
+  max-width: 4rem;
+  min-width: 4rem;
+}
+
+tbody th {
+  width: calc(100% - 12rem);
+}
+
+tr[class="total"] {
+  border-bottom: 4px double #0a0a23;
+  font-weight: bold;
+}
+
+tr[class="total"] th {
+  padding: 0.5rem 0 0.25rem 0.5rem;
+  text-align: left;
+}
+
+tr.total td {
+  text-align: right;
+  padding: 0 0.25rem;
+}
+
+tr.total td:nth-of-type(3) {
+  padding-right: 0.5rem;
+}
+
+tr.total:hover {
+  background: #99c9ff;
+}
+
+td[class="current"] {
+  font-style: italic;
+}
+
+tr[class="data"] {
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th {
+  text-align: left;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+}
+
+tr.data th .description {
+  display: block;
+  font-style: italic;
+  font-weight: normal;
+  padding: 1rem 0 0.75rem;
+  margin-right: -13.5rem;
+}
